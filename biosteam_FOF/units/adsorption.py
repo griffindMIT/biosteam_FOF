@@ -403,8 +403,10 @@ class SingleComponentAdsorptionColumn(PressureVessel, bst.Unit):
             "is given (defaults to 0.6096 m in that case).",
         default=None,
     )
-    vessel_material = bst.update_design_input(default='Stainless steel 316')
-    vessel_type = bst.update_design_input(default='Vertical')
+    vessel_material = bst.design_input(default='Stainless steel 316')
+    vessel_type = bst.design_input(default='Vertical')
+    #vessel_material = bst.update_design_input(default='Stainless steel 316')
+    #vessel_type = bst.update_design_input(default='Vertical')
 
     def _init(self,
             # Langmuir:
