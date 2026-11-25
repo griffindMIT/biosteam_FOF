@@ -8,13 +8,13 @@
 from setuptools import setup
 
 setup(
-    name='biosteam',
-    packages=['biosteam'],
+    name='biosteam_FOF',
+    packages=['biosteam_FOF'],
     license='MIT',
     version='2.55.0',
-    description='The Biorefinery Simulation and Techno-Economic Analysis Modules',
+    description='The Biorefinery Simulation and Techno-Economic Analysis Modules - Future of Fuel Modifications',
     long_description=open('README.rst', encoding='utf-8').read(),
-    author='Yoel Cortes-Pena',
+    author='Griffin Drake',
     install_requires=['IPython>=7.9.0',
                       'thermosteam>=0.55.0',
                       'hensmith>=0.1.2',
@@ -36,7 +36,7 @@ setup(
         ]
     }, 
     package_data= {
-        'biosteam': ['report/*',
+        'biosteam_FOF': ['report/*',
                      'graphics',
                      'digraph/*',
                      'utils/*',
@@ -52,14 +52,14 @@ setup(
                      'units/decorators/*']
     },
     exclude_package_data={
-        'biosteam': ['graphviz_color_settings.txt',
+        'biosteam_FOF': ['graphviz_color_settings.txt',
                      'preferences.yaml'],
     },
     python_requires='>=3.12',
     platforms=['Windows', 'Mac', 'Linux'],
-    author_email='yoelcortes@gmail.com',
-    url='https://github.com/BioSTEAMDevelopmentGroup/biosteam',
-    download_url='https://github.com/BioSTEAMDevelopmentGroup/biosteam.git',
+    author_email='griffinsdrake@gmail.com',
+    url='https://github.com/griffindMIT/biosteam_FOF',
+    download_url='https://github.com/griffindMIT/biosteam_FOF.git',
     classifiers=['License :: OSI Approved :: University of Illinois/NCSA Open Source License',
                  'Development Status :: 3 - Alpha',
                  'Environment :: Console',
