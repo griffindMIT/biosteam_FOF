@@ -41,7 +41,7 @@ from .drying import *
 from .size_reduction import *
 from .size_enlargement import *
 from .liquid_liquid_extraction import *
-from .adsorption import *
+#from .adsorption import *
 from .auxiliary import *
 from .agitator import *
 from .nrel_bioreactor import *

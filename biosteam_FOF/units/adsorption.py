@@ -141,8 +141,9 @@ def adsorption_bed_pressure_drop(
         dP = 1.75 * u**2 * L * re * rho/(D * e3) + 150
     return dP
 
+"""
 class SingleComponentAdsorptionColumn(PressureVessel, bst.Unit):
-    """
+    
     Create an adsorption column which can operate by temperature or pressure swing,
     or by disposing the adsorbent. Heats of adsorption are neglected but may become
     an option with future development in BioSTEAM. Default parameters are heuristic values 
@@ -317,7 +318,7 @@ class SingleComponentAdsorptionColumn(PressureVessel, bst.Unit):
         phase: 'l', T: 298.15 K, P: 101325 Pa
         flow (kg/hr): ActivatedCarbon  0.154
     
-    """
+    
     auxiliary_unit_names = (
         'pump', 'heat_exchanger',
         'regeneration_pump'
@@ -933,3 +934,4 @@ class SingleComponentAdsorptionColumn(PressureVessel, bst.Unit):
         }
 
 AdsorptionColumn = SingleComponentAdsorptionColumn
+"""
